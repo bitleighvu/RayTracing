@@ -1,0 +1,30 @@
+# various intersecting ellipsoids
+
+background .4 .4 .9
+
+fov 60
+eye  1.5 2 4
+uvw 0.99805 0.0 -0.062378 -0.027852 0.89477 -0.44564 0.055814 0.44651 0.893032
+
+light 2 4 6 1 1 1
+
+surface   0.7 0 0   0.2 0.2 0.2   0.4 0.4 0.4   20  0
+ellipsoid  0 0 0  0.1 1 1
+
+surface   0 0.7 0   0.2 0.2 0.2   0.4 0.4 0.4   20  0
+ellipsoid  0 0 0  1 0.1 1
+
+surface   0 0 0.7   0.2 0.2 0.2   0.4 0.4 0.4   20  0
+ellipsoid  0 0 0  1 1 0.1
+
+
+surface   0.7 0 0   0.2 0.2 0.2   0.4 0.4 0.4   20  0
+ellipsoid  2.5 0 0  0.2 1 0.2
+
+surface   0 0.7 0   0.2 0.2 0.2   0.4 0.4 0.4   20  0
+ellipsoid  2.5 0 0  0.2 0.2 1
+
+surface   0 0 0.7   0.2 0.2 0.2   0.4 0.4 0.4   20  0
+ellipsoid  2.5 0 0  1 0.2 0.2
+
+write p06.png

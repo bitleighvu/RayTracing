@@ -1,0 +1,37 @@
+# several reflective spheres touching the ground
+
+fov 60
+eye  0 0.8 0
+uvw 1.0 0.0 -0.0  0.0 0.99875236 0.049937617  0.0 -0.049937617 0.99875236
+
+# blue background
+
+background 0.2 0.2 1
+
+# two light sources
+
+light 8 8 3  .7 .7 .7
+light -4 2 0  .3 .3 .3
+
+# this disk acts as a ground plane
+
+surface  .8 .8 .8  .2 .2 .2  0 0 0  1  0
+
+disk 0 0 0  0 1 0  20
+
+# reflective ellipsoids
+
+surface  .6 .6 .6  .2 .2 .2  0.7 0.7 0.7  20  0.7
+
+ellipsoid  0.8 1.6 -7  0.8 1.6 0.8
+
+ellipsoid  -0.8 0.8 -7  0.8 0.8 0.8
+
+ellipsoid  -0.2 0.4 -4.5  0.4 0.4 0.4
+
+ellipsoid  1.3 0.4 -4  0.7 0.4 0.7
+
+ellipsoid  -1.2 0.4 -3  0.4 0.4 0.4
+
+write p10.png
+

@@ -1,0 +1,14 @@
+# one diffuse red sphere
+
+background .4 .4 .9
+
+fov 60
+eye  0 0 0
+uvw  1 0 0  0 1 0  0 0 1
+
+light 0 4 5 1 1 1
+
+surface   0.9 0 0   0 0 0   0 0 0   1  0
+ellipsoid  0 0 -4  1 1 1
+
+write p04.png

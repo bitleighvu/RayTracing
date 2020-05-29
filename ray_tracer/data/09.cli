@@ -1,0 +1,43 @@
+# various ellipsoids
+
+background .4 .4 .9
+
+fov 60
+eye  2 0 8
+uvw  1 0 0  0 1 0  0 0 1
+
+light 4 3 5 1 1 1
+
+surface   1 0.7 0.0   0 0 0   0 0 0   1  0
+ellipsoid  -2  2  0  0.2 0.2 0.8
+
+surface   0.4 0.9 0.3   0 0 0   0 0 0   1  0
+ellipsoid   0  2  0  0.8 0.2 0.2
+
+surface   0.7 0.2 0.9   0 0 0   0 0 0   1  0
+ellipsoid   2  2  0  0.2 0.8 0.2
+
+surface   0.9 0.9 0.2   0 0 0   0 0 0   1  0
+ellipsoid  -2  0  0  0.2 0.2 0.2
+
+surface   1 0.4 0.7   0 0 0   0 0 0   1  0
+ellipsoid   0  0  0  0.4 0.4 0.4
+
+surface   0.3 0.9 0.9   0 0 0   0 0 0   1  0
+ellipsoid   2  0  0  0.8 0.8 0.8
+
+surface   0.4 0.4 0.9   0 0 0   0 0 0   1  0
+ellipsoid  -2 -2  0  0.2 0.8 0.8
+
+surface   0.9 0.9 0.9   0 0 0   0 0 0   1  0
+ellipsoid   0 -2  0  0.8 0.8 0.2
+
+surface   0.9 0 0   0 0 0   0 0 0   1  0
+ellipsoid   2 -2  0  0.8 0.2 0.8
+
+# disk that acts as a mirror
+
+surface   0.3 0.3 0.3   0 0 0   0 0 0   1  0.9
+disk  5 0 -2  -1 0 1  3
+
+write p09.png

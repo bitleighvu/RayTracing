@@ -1,0 +1,29 @@
+# colored lights that make colorful shadow pattern
+
+fov 60
+eye  0 0 0
+uvw  1 0 0  0 1 0  0 0 1
+
+# blue background
+
+background 0.2 0.2 1
+
+# three light sources (red, green, blue)
+
+light  3 4  0  .8 .2 .2
+light -3 4  0  .2 .8 .2
+light  0 4 -5  .2 .2 .8
+
+# this disk acts as a ground plane
+
+surface  .8 .8 .8  .2 .2 .2  0 0 0  1  0
+
+disk 0 -1 0  0 1 0  9
+
+# shadow-casting ellipsoid
+
+surface  .8 .8 .8  .2 .2 .2  0 0 0  1  0
+ellipsoid  0 0.5 -3  1.2 0.7 1.2
+
+write p08.png
+
