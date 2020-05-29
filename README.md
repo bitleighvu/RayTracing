@@ -10,6 +10,10 @@ Goals:
 5. Cast shadow rays to determine when a light should contribute to the color.
 6 Implement reflection by recursively casting new rays into the scene from inside your shading function.
 
+Program obeys the following keystroke commands:
+* 0-9: Runs test cases
+* -: Runs test case
+
 ### Run Instructions ###
 1. Open the project folder
 2. Change directory to *ray_tracer*
